@@ -1,2 +1,1 @@
-# new-year-countdown
-# new-year-countdown
+New Year Countdown (HTML, CSS, JS)

@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Playball&display=swap');
+body{
+    background-color: #006051;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    z-index: 1222;
+}
+
+.title__text{
+    font-size: 100px;
+    font-weight: 700;
+    color: #C72222;
+    text-align: center;
+    margin-bottom: 10px;
+
+    font-family: "Playball", serif;
+
+}
+
+.year__title{
+    font-size: 72px;
+    font-weight: 700;
+    color: rgba(126, 126, 126, 0.5);
+    text-align: center;
+    margin: 40px 0;
+}
+
+.countdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    max-width: 850px;
+
+}
+
+.countdown__item{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin: 10px 20px;
+    padding: 30px;
+    background-color: #4B894B;
+    border-radius: 40px;
+    border: 7px dashed #003e34;
+    box-shadow: none;
+    width: 150px;
+
+}
+
+.countdown__item--title{
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 20px;
+
+    font-family: "Playball", serif;
+    font-style: normal;
+}
+
+.countdown__item--value{
+    font-size: 64px;
+    font-weight: 500;
+    color: #000;
+
+    font-family: "Luckiest Guy", serif;
+    font-style: normal;
+}
+
+@media (max-width: 1024px) {
+    .title__text{
+        font-size: 62px;
+    }
+}
+@media (max-width: 530px) {
+
+    .countdown__item{
+        margin: 7px 13px;
+        padding: 18px;
+        border-radius: 28px;
+        border: 3px dashed #003e34;
+        box-shadow: none;
+        width: 120px;
+    }
+
+    .countdown__item--title{
+        font-size: 24px;
+    }
+
+    .countdown__item--value{
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 420px) {
+    .body{
+        height: auto !important;
+    }
+    .countdown__item--title{
+        font-size: 34px;
+    }
+    .countdown__item--value{
+        font-size: 50px;
+    }
+    .countdown__item{
+        width: 100%;
+    }
+}
